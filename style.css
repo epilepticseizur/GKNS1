@@ -243,6 +243,11 @@ button:hover {
   background-color: #155a9e;
 }
 
+.contacts-icons{
+  display: flex;
+  gap: 180px;
+}
+
 /* Футер */
 
 footer {
