@@ -379,11 +379,7 @@ footer {
   background-color: #ffffff;
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  .squad-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 .text-card {
   padding: 20px;
   background-color: #f5faff;
@@ -472,3 +468,8 @@ footer {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .squad-grid {
+    grid-template-columns: 1fr;
+  }
+}
