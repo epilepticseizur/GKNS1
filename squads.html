@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="title">GKNS | Отряды</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+   <div class="language-switcher">
+        <span class="flag" onclick="setLanguage('ua')" title="Українська">🇺🇦</span>
+        <span class="flag" onclick="setLanguage('en')" title="English">🇬🇧</span>
+        <span class="flag" onclick="setLanguage('ru')" title="Русский">🇷🇺</span>
+  </div>
+  <header>
+    <div class="container header-container">
+      <img 
+        src="./images/photo_2025-05-29_16-41-18.jpg" 
+        alt="GKNS Лого" 
+        class="logo-image" 
+        data-aos="fade-down"
+        style="max-height: 80px; margin-right: 15px; border-radius: 50%; object-fit: cover;"
+      />
+      <h1 class="logo" data-aos="fade-down" data-i18n="header.logo">GKNS</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+          <li><a href="weapons.html" data-i18n="nav.weapons">Вооружение</a></li>
+          <li><a href="command.html" data-i18n="nav.command">Генштаб</a></li>
+          <li><a href="squads.html" class="active" data-i18n="nav.squads">Отряды</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" data-aos="fade-up">
+    <h2 class="main-title centered-title" data-i18n="squads.title">Отряды GKNS</h2>
+    <div class="intro-text">
+        <p data-i18n="squads.intro">
+            Каждый отряд в нашей банде выполняет свою уникальную функцию на поле боя. Отряды возглавляются опытными лидерами, которые координируют действия своих бойцов. Это ключевая часть нашей структуры — именно слаженность и тактическое распределение ролей позволяют нам эффективно действовать в боевых ситуациях.
+        </p>
+    </div>
+
+    <div class="squad-grid">
+      <!-- Первый отряд -->
+      <div class="squad-card text-card hover-pop">
+        <h3 data-i18n="squads.team1.title">Отряд "Громовержцы"</h3>
+        <p data-i18n="squads.team1.desc">Специализируется на ближнем бою и захвате точек. Лидер отряда — _Assas1n_, опытный тактик с агрессивным стилем игры.</p>
+      </div>
+      <div class="squad-card image-card hover-pop" style="background-image: url('./images/test.png');"></div>
+
+      <!-- Второй отряд -->
+      <div class="squad-card text-card hover-pop">
+        <h3 data-i18n="squads.team2.title">Отряд "Коршуны"</h3>
+        <p data-i18n="squads.team2.desc">Операции скрытного проникновения и диверсий. Лидер — W3rsEt1n. Основная задача — внезапные атаки и устранение цели.</p>
+      </div>
+      <div class="squad-card image-card hover-pop" style="background-image: url('./images/test.png');"></div>
+
+      <!-- Третий отряд -->
+      <div class="squad-card text-card hover-pop">
+        <h3 data-i18n="squads.team3.title">Отряд "Немезида"</h3>
+        <p data-i18n="squads.team3.desc">Тяжелая артиллерия и подавление врага. Лидер — NEO_FenomenHD. Используют технику и взрывчатку для контроля территории.</p>
+      </div>
+      <div class="squad-card image-card hover-pop" style="background-image: url('./images/test.png');"></div>
+
+      <!-- Четвертый отряд -->
+      <div class="squad-card text-card hover-pop">
+        <h3 data-i18n="squads.team4.title">Отряд "Смерч"</h3>
+        <p data-i18n="squads.team4.desc">Воздушная поддержка и разведка. Лидер — dark_120_atreus. Отряд использует воздушную технику для прикрытия союзников.</p>
+      </div>
+      <div class="squad-card image-card hover-pop" style="background-image: url('./images/test.png');"></div>
+
+      <!-- Пятый отряд -->
+      <div class="squad-card text-card hover-pop">
+        <h3 data-i18n="squads.team5.title">Отряд "Камертон"</h3>
+        <p data-i18n="squads.team5.desc">Лидер - AlexeyUnion_</p>
+      </div>
+      <div class="squad-card image-card hover-pop" style="background-image: url('./images/test.png');"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="footer.copyright">&copy; 2025 GKNS. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+  <script>
+  const translations = {
+    "ru": {
+      "title": "GKNS | Отряды",
+      "header.logo": "GKNS",
+      "nav.home": "Главная",
+      "nav.weapons": "Вооружение",
+      "nav.command": "Генштаб",
+      "nav.squads": "Отряды",
+      "nav.contact": "Контакты",
+      "squads.title": "Отряды GKNS",
+      "squads.intro": "Каждый отряд в нашей банде выполняет свою уникальную функцию на поле боя. Отряды возглавляются опытными лидерами, которые координируют действия своих бойцов. Это ключевая часть нашей структуры — именно слаженность и тактическое распределение ролей позволяют нам эффективно действовать в боевых ситуациях.",
+      "squads.team1.title": "Отряд \"Громовержцы\"",
+      "squads.team1.desc": "Специализируется на ближнем бою и захвате точек. Лидер отряда — _Assas1n_, опытный тактик с агрессивным стилем игры.",
+      "squads.team2.title": "Отряд \"Коршуны\"",
+      "squads.team2.desc": "Операции скрытного проникновения и диверсий. Лидер — W3rsEt1n. Основная задача — внезапные атаки и устранение цели.",
+      "squads.team3.title": "Отряд \"Немезида\"",
+      "squads.team3.desc": "Тяжелая артиллерия и подавление врага. Лидер — NEO_FenomenHD. Используют технику и взрывчатку для контроля территории.",
+      "squads.team4.title": "Отряд \"Смерч\"",
+      "squads.team4.desc": "Воздушная поддержка и разведка. Лидер — dark_120_atreus. Отряд использует воздушную технику для прикрытия союзников.",
+      "squads.team5.title": "Отряд \"Камертон\"",
+      "squads.team5.desc": "Лидер - AlexeyUnion_",
+      "footer.copyright": "© 2025 GKNS. Все права защищены."
+    },
+    "en": {
+      "title": "GKNS | Squads",
+      "header.logo": "GKNS",
+      "nav.home": "Home",
+      "nav.weapons": "Weapons",
+      "nav.command": "Command",
+      "nav.squads": "Squads",
+      "nav.contact": "Contacts",
+      "squads.title": "GKNS Squads",
+      "squads.intro": "Each squad in our gang performs a unique role on the battlefield. Squads are led by experienced leaders who coordinate their fighters' actions. This is a key part of our structure — teamwork and tactical role distribution allow us to act effectively in combat situations.",
+      "squads.team1.title": "Squad \"Thunderclaps\"",
+      "squads.team1.desc": "Specializes in close combat and capturing points. Squad leader — _Assas1n_, an experienced tactician with an aggressive play style.",
+      "squads.team2.title": "Squad \"Vultures\"",
+      "squads.team2.desc": "Covert operations and sabotage. Leader — W3rsEt1n. Main task — surprise attacks and target elimination.",
+      "squads.team3.title": "Squad \"Nemesis\"",
+      "squads.team3.desc": "Heavy artillery and enemy suppression. Leader — NEO_FenomenHD. Use vehicles and explosives to control territory.",
+      "squads.team4.title": "Squad \"Whirlwind\"",
+      "squads.team4.desc": "Air support and reconnaissance. Leader — dark_120_atreus. Uses air vehicles to cover allies.",
+      "squads.team5.title": "Squad \"Tuning Fork\"",
+      "squads.team5.desc": "Leader - AlexeyUnion_",
+      "footer.copyright": "© 2025 GKNS. All rights reserved."
+    },
+    "ua": {
+      "title": "GKNS | Відряди",
+      "header.logo": "GKNS",
+      "nav.home": "Головна",
+      "nav.weapons": "Озброєння",
+      "nav.command": "Генштаб",
+      "nav.squads": "Загони",
+      "nav.contact": "Контакти",
+      "squads.title": "Загони GKNS",
+      "squads.intro": "Кожен загін у нашій банді виконує унікальну функцію на полі бою. Загони очолюють досвідчені лідери, які координують дії своїх бійців. Це ключова частина нашої структури — саме злагодженість та тактичний розподіл ролей дозволяють ефективно діяти у бойових ситуаціях.",
+      "squads.team1.title": "Загін \"Громовержці\"",
+      "squads.team1.desc": "Спеціалізується на ближньому бою та захопленні точок. Лідер загону — _Assas1n_, досвідчений тактик з агресивним стилем гри.",
+      "squads.team2.title": "Загін \"Коршуни\"",
+      "squads.team2.desc": "Операції прихованого проникнення та диверсій. Лідер — W3rsEt1n. Основне завдання — раптові атаки та усунення цілі.",
+      "squads.team3.title": "Загін \"Немезіда\"",
+      "squads.team3.desc": "Тяжка артилерія та придушення ворога. Лідер — NEO_FenomenHD. Використовують техніку та вибухівку для контролю території.",
+      "squads.team4.title": "Загін \"Смерч\"",
+      "squads.team4.desc": "Повітряна підтримка та розвідка. Лідер — dark_120_atreus. Відряд використовує повітряну техніку для прикриття союзників.",
+      "squads.team5.title": "Загін \"Камертон\"",
+      "squads.team5.desc": "Лідер - AlexeyUnion_",
+      "footer.copyright": "© 2025 GKNS. Всі права захищені."
+    }
+  };
+
+  function setLanguage(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key]) {
+        if (el.tagName.toLowerCase() === 'input' || el.tagName.toLowerCase() === 'textarea') {
+          el.placeholder = translations[lang][key];
+        } else {
+          el.textContent = translations[lang][key];
+        }
+      }
+    });
+  }
+
+  // Приклад: встановити мову за замовчуванням
+  const userLang = localStorage.getItem('language') || 'ru';
+  setLanguage(userLang);
+</script>
+</body>
+</html>

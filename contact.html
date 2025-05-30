@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="contact-title">GKNS | Контакты</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="language-switcher">
+    <span class="flag" onclick="setLanguage('ua')" title="Українська">🇺🇦</span>
+    <span class="flag" onclick="setLanguage('en')" title="English">🇬🇧</span>
+    <span class="flag" onclick="setLanguage('ru')" title="Русский">🇷🇺</span>
+  </div>
+  <header>
+    <div class="container header-container">
+      <img 
+        src="./images/photo_2025-05-29_16-41-18.jpg" 
+        alt="GKNS Лого" 
+        class="logo-image" 
+        data-aos="fade-down"
+        style="max-height: 80px; margin-right: 15px; border-radius: 50%; object-fit: cover;"
+      />
+      <h1 class="logo" data-aos="fade-down">GKNS</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav-home">Главная</a></li>
+          <li><a href="weapons.html" data-i18n="nav-weapons">Вооружение</a></li>
+          <li><a href="command.html" data-i18n="nav-command">Генштаб</a></li>
+          <li><a href="squads.html" data-i18n="nav-squads">Отряды</a></li>
+          <li><a href="contact.html" class="active" data-i18n="nav-contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" data-aos="fade-up">
+    <h2 data-i18n="contact-heading">Контакты</h2>
+    <p data-i18n="contact-description">Связаться с нами можно через:</p>
+    <div class="contacts-icons">
+      <a href="https://discord.gg/ZyDP3TjYb7" target="_blank" rel="noopener noreferrer" title="Discord">
+        <img src="./images/discord-removebg-preview.png" alt="Discord" width="50" height="50" />
+      </a>
+      <a href="https://t.me/to_lights" target="_blank" rel="noopener noreferrer" title="Telegram">
+        <img src="./images/telegram.webp" alt="Telegram" width="50" height="50" />
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 GKNS. <span data-i18n="footer-rights">Все права защищены.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+  <script>
+const translations = {
+  ru: {
+    "contact-title": "GKNS | Контакты",
+    "nav-home": "Главная",
+    "nav-weapons": "Вооружение",
+    "nav-command": "Генштаб",
+    "nav-squads": "Отряды",
+    "nav-contact": "Контакты",
+    "contact-heading": "Контакты",
+    "contact-description": "Связаться с нами можно через:",
+    "footer-rights": "Все права защищены."
+  },
+  ua: {
+    "contact-title": "GKNS | Контакти",
+    "nav-home": "Головна",
+    "nav-weapons": "Озброєння",
+    "nav-command": "Генштаб",
+    "nav-squads": "Загони",
+    "nav-contact": "Контакти",
+    "contact-heading": "Контакти",
+    "contact-description": "Зв'язатися з нами можна через:",
+    "footer-rights": "Усі права захищені."
+  },
+  en: {
+    "contact-title": "GKNS | Contacts",
+    "nav-home": "Home",
+    "nav-weapons": "Weapons",
+    "nav-command": "Command",
+    "nav-squads": "Squads",
+    "nav-contact": "Contacts",
+    "contact-heading": "Contacts",
+    "contact-description": "You can contact us via:",
+    "footer-rights": "All rights reserved."
+  }
+};
+
+function applyTranslations(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  document.documentElement.lang = lang;
+  localStorage.setItem("lang", lang);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "ru";
+  applyTranslations(savedLang);
+});
+</script>
+</body>
+</html>

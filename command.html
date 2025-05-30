@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="title">GKNS | Генштаб</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="language-switcher">
+    <span class="flag" onclick="setLanguage('ua')" title="Українська">🇺🇦</span>
+    <span class="flag" onclick="setLanguage('en')" title="English">🇬🇧</span>
+    <span class="flag" onclick="setLanguage('ru')" title="Русский">🇷🇺</span>
+  </div>
+  <header>
+    <div class="container header-container">
+      <img 
+        src="./images/photo_2025-05-29_16-41-18.jpg" 
+        alt="GKNS Лого" 
+        class="logo-image" 
+        data-aos="fade-down"
+        style="max-height: 80px; margin-right: 15px; border-radius: 50%; object-fit: cover;"
+      />
+      <h1 class="logo" data-aos="fade-down">GKNS</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+          <li><a href="weapons.html" data-i18n="nav_weapons">Вооружение</a></li>
+          <li><a href="command.html" class="active" data-i18n="nav_command">Генштаб</a></li>
+          <li><a href="squads.html" data-i18n="nav_squads">Отряды</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" data-aos="fade-up">
+    <h2 class="commandh2" data-i18n="command_title">Генштаб GKNS</h2>
+    <p class="commandp" data-i18n="command_description">Ниже представлены игроки, короткие сведения о них и их никнеймы в банде.</p>
+
+    <div class="command-grid">
+      <div class="command-card" style="background-image: url('./images/epilepticseizur.jpg');">
+        <span class="player-nick">epilepticseizur <br><span class="player-text" data-i18n="player_epilepticseizur">
+          Отвечает за благоустройство банды: занимается сайтом, дизайном и организационными задачами. Состоит в воздушных силах (ВВС), обеспечивает поддержку с воздуха и участвует в операциях.
+        </span></span>
+      </div>
+      <div class="command-card" style="background-image: url('./images/w3rset1n.jpg');">
+        <span class="player-nick">W3rsEt1n | Шурик <br><span class="player-text" data-i18n="player_w3rset1n">Играет с 2020 года, занимается чисткой сессий от гриферов, в клане занимает пост Генерала пехотных войск. Дружелюбен и спокоен.</span></span>
+      </div>
+      <div class="command-card" style="background-image: url('./images/test1.webp');">
+        <span class="player-nick">dark_120_atreus</span>
+      </div>
+      <div class="command-card" style="background-image: url('./images/test1.webp');">
+        <span class="player-nick">NEO_FenomenHD</span>
+      </div>
+      <div class="command-card" style="background-image: url('./images/alexeyunion.jpg');">
+        <span class="player-nick">AlexeyUnion_ <br><span class="player-text" data-i18n="player_alexeyunion">
+          Состоит в пехотных войсках. Отличается дружелюбием и отзывчивостью, всегда готов прийти на помощь товарищам по банде.
+        </span></span>
+      </div>
+      <div class="command-card" style="background-image: url('./images/assasin.jpg');">
+        <span class="player-nick">_Assas1n_ | GHOST <br><span class="player-text" data-i18n="player_assasin">
+          Играю с зимы 2022 года, занимался разными тайными операциями против гриферов и их союзников. Сейчас занимаю пост главнокомандующего армией. Ответственен, честен, человечен
+        </span></span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="footer_text">&copy; 2025 GKNS. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+
+  <script>
+  const translations = {
+    ua: {
+      title: "GKNS | Генштаб",
+      nav_home: "Головна",
+      nav_weapons: "Озброєння",
+      nav_command: "Генштаб",
+      nav_squads: "Відряди",
+      nav_contact: "Контакти",
+      command_title: "Генштаб GKNS",
+      command_description: "Нижче представлені гравці, короткі відомості про них та їхні ніки в банді.",
+      player_epilepticseizur: "Відповідає за благоустрій банди: займається сайтом, дизайном і організаційними завданнями. Служить у повітряних силах (ПС), забезпечує повітряну підтримку та бере участь в операціях.",
+      player_w3rset1n: "Грає з 2020 року, займається очищенням сесій від грифів, у клані обіймає посаду Генерала піхотних військ. Доброзичливий і спокійний.",
+      player_alexeyunion: "Служить у піхотних військах. Доброзичливий і чуйний, завжди готовий допомогти товаришам по команді.",
+      footer_text: "© 2025 GKNS. Всі права захищені.",
+      player_assasin: "Граю з зими 2022 року, займався різними таємними операціями проти грифів та їхніх союзників. Нині обіймаю посаду головнокомандувача армією. Відповідальний, чесний, людяний.",
+
+    },
+    en: {
+      title: "GKNS | Command",
+      nav_home: "Home",
+      nav_weapons: "Weapons",
+      nav_command: "Command",
+      nav_squads: "Squads",
+      nav_contact: "Contacts",
+      command_title: "GKNS Command",
+      command_description: "Below are the players, brief info about them and their nicknames in the gang.",
+      player_epilepticseizur: "Responsible for the development of the gang: works on the website, design, and organizational tasks. Serves in the Air Forces (AF), provides aerial support and takes part in operations.",
+      player_alexeyunion: "Serves in the infantry. Known for being friendly and responsive, always ready to support fellow gang members.",
+      footer_text: "© 2025 GKNS. All rights reserved.",
+      player_w3rset1n: "Playing since 2020, clears sessions from griefers, holds the rank of Infantry Forces General in the clan. Friendly and calm.",
+      player_assasin: "Playing since winter 2022, involved in various covert operations against griefers and their allies. Currently serving as the Commander-in-Chief of the army. Responsible, honest, humane.",
+  },
+    
+    ru: {
+      title: "GKNS | Генштаб",
+      nav_home: "Главная",
+      nav_weapons: "Вооружение",
+      nav_command: "Генштаб",
+      nav_squads: "Отряды",
+      nav_contact: "Контакты",
+      command_title: "Генштаб GKNS",
+      command_description: "Ниже представлены игроки, короткие сведения о них и их никнеймы в банде.",
+      player_epilepticseizur: "Отвечает за благоустройство банды: занимается сайтом, дизайном и организационными задачами. Состоит в воздушных силах (ВВС), обеспечивает поддержку с воздуха и участвует в операциях.",
+      player_alexeyunion: "Состоит в пехотных войсках. Отличается дружелюбием и отзывчивостью, всегда готов прийти на помощь товарищам по банде.",
+      footer_text: "© 2025 GKNS. Все права защищены.",
+      member_dev_desc: "Отвечает за благоустройство банды: занимается сайтом, дизайном и организационными задачами. Состоит в воздушных силах (ВВС), обеспечивает поддержку с воздуха и участвует в операциях.",
+      member_general_desc: "Играет с 2020 года, занимается чисткой сессий от гриферов, в клане занимает пост Генерала пехотных войск. Дружелюбен и спокоен.",
+      player_w3rset1n: "Играет с 2020 года, занимается чисткой сессий от гриферов, в клане занимает пост Генерала пехотных войск. Дружелюбен и спокоен.",
+      player_assasin: "Играю с зимы 2022 года, занимался разными тайными операциями против гриферов и их союзников. Сейчас занимаю пост главнокомандующего армией. Ответственен, честен, человечен.",
+    }
+  };
+
+  function setLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+  }
+  </script>
+</body>
+</html>
