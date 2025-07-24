@@ -39,7 +39,7 @@ header {
   font-family: 'Lora', serif;
   font-weight: 700;
   font-size: 2.5rem;
-  color: #1b6ca8;
+  color: black;
   margin: 0;
   user-select: none;
   cursor: default;
@@ -62,7 +62,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #1b6ca8;
+  color: black;
   font-weight: 600;
   font-size: 1.1rem;
   padding: 6px 12px;
@@ -72,7 +72,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #1b6ca8;
+  background-color: black;
   color: white;
 }
 
@@ -89,7 +89,7 @@ nav ul li a.active {
 }
 
 .language-switch img:hover {
-  border-color: #1b6ca8;
+  border-color: black;
 }
 
 /* Основний контент */
@@ -97,7 +97,7 @@ nav ul li a.active {
 main h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #155a9e;
+  color: black;
 }
 
 main p {
@@ -131,7 +131,7 @@ main p {
 
 .card h3 {
   margin: 15px 0 10px;
-  color: #1b6ca8;
+  color: black;
 }
 
 .card p {
@@ -176,7 +176,7 @@ main p {
 }
 
 .command-card h3 {
-  color: #1b6ca8;
+  color: black;
   margin-bottom: 8px;
 }
 
@@ -218,7 +218,7 @@ label {
 input, textarea {
   padding: 10px;
   font-size: 1rem;
-  border: 2px solid #1b6ca8;
+  border: 2px solid black;
   border-radius: 6px;
   resize: vertical;
   transition: border-color 0.3s ease;
@@ -230,7 +230,7 @@ input:focus, textarea:focus {
 }
 
 button {
-  background-color: #1b6ca8;
+  background-color: black;
   color: white;
   padding: 12px;
   font-size: 1.1rem;
@@ -242,7 +242,7 @@ button {
 }
 
 button:hover {
-  background-color: #155a9e;
+  background-color: black;
 }
 
 .contacts-icons{
@@ -253,7 +253,7 @@ button:hover {
 /* Футер */
 
 footer {
-  background-color: #1b6ca8;
+  background-color: black;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -318,20 +318,24 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  
+  background: linear-gradient(to bottom, #ffffff, #e9f4fc);
+
 }
 
 /* Основний контент розтягується */
 main {
   flex: 1;
+  
 }
 
 /* Стилі для футера */
 footer {
   
-  color: #fff;
+  color: black;
   text-align: center;
   padding: 15px;
-  background-color: #1b6ca8;
+  background-color: #e9f4fc;
 }
 
 .language-switcher {
@@ -388,7 +392,7 @@ footer {
 }
 
 .text-card h3 {
-  color: #1b6ca8;
+  color: black;
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
