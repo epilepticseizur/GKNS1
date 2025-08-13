@@ -486,10 +486,16 @@ footer {
 @media (max-width: 768px) {
   .squad-grid {
     grid-template-columns: 1fr;
+    
   }
+  
 }
 @media (max-width: 768px) {
-  .command-grid {
+  /* .command-grid {
     grid-template-columns: 1fr; 
+  } */
+  .command-card {
+    margin-bottom: 25px; /* відстань між картками */
+    padding-bottom: 25px; /* якщо тобі потрібно */
   }
 }
