@@ -280,9 +280,11 @@ footer {
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);  */
   display: flex;
+  flex-direction: column;
+  display: flex;
   gap: 20px;
   margin: 20px auto;
-  max-width: 1000px; /* під 2 колонки */
+  max-width: 1000px; 
   
 }
 
@@ -300,7 +302,14 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
+  
 }
+
+.command-card:nth-child(1){
+  background-position: center 10%;
+}
+
+
 
 .command-card:hover {
   transform: scale(1.05);
